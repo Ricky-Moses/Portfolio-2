@@ -20,9 +20,9 @@ li{
 }
 
 
-body{
+/* body{
     height: 1000vh;
-}
+} */
 
 /* Navigation Bar================================================ */
 
@@ -132,7 +132,7 @@ body{
     /* Main------------------------------------------------------- */
 
     #main{
-        height: 60vh;
+        height: 100vh;
     }
 
     #main .main-intro{
@@ -172,14 +172,14 @@ body{
     }
 
     #check:checked ~ nav{
-        height: 20vh;
+        height: 40vh;
     }
     /* Navigation------------------------------------------------- */
 
     /* Main------------------------------------------------------- */
 
     #main{
-        height: 60vh;
+        height: 100vh;
     }
 
     #main .main-intro {
@@ -187,11 +187,14 @@ body{
     }
 
     #main .main-intro .btn-1 {
-        padding: 2vw;
+        padding: 1.5vw;
     }
 
     /* Main------------------------------------------------------- */
 }
+
+
+
 
 
 @media (max-width:768px){
@@ -217,18 +220,9 @@ body{
         padding: 4vw;
     }
 
-    #check:checked ~ nav{
-        height: 25vh;
-    }
-
     /* Navigation------------------------------------------------- */
 
     /* Main------------------------------------------------------- */
-
-    #main{
-        height: 50vh;
-
-    }
     #main .main-intro{
         width: 60%;
         top: 60%;
