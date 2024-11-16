@@ -194,6 +194,15 @@ li{
 
 
 @media (max-width:768px){
+
+    /* Navigation------------------------------------------------- */
+
+    #check:checked ~ nav{
+        height: 50vh;
+    }
+
+    /* Navigation------------------------------------------------- */
+
     /* Main------------------------------------------------------- */
 
     #main .main-intro {
@@ -214,6 +223,10 @@ li{
 
     #navigation .header{
         padding: 4vw;
+    }
+
+    #check:checked ~ nav{
+        height: 35vh;
     }
 
     /* Navigation------------------------------------------------- */
