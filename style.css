@@ -19,10 +19,14 @@ li{
     list-style-type: none;
 }
 
+html{
+    height: --webkit-fill-available;
+}
 
-/* body{
+body{
     height: 1000vh;
-} */
+    height: --webkit-fill-available;
+}
 
 /* Navigation Bar================================================ */
 
