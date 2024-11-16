@@ -67,7 +67,6 @@ li{
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    border: solid red;
 }
 
 #main .main-intro{
@@ -169,7 +168,7 @@ li{
     }
 
     #check:checked ~ nav{
-        height: 20vh;
+        height: 40vh;
     }
     /* Navigation------------------------------------------------- */
 
