@@ -169,7 +169,7 @@ li{
     }
 
     #check:checked ~ nav{
-        height: 40vh;
+        height: 20vh;
     }
     /* Navigation------------------------------------------------- */
 
