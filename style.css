@@ -19,6 +19,11 @@ li{
     list-style-type: none;
 }
 
+
+body{
+    height: 1000vh;
+}
+
 /* Navigation Bar================================================ */
 
 #check, label{
@@ -210,6 +215,10 @@ li{
 
     #navigation .header{
         padding: 4vw;
+    }
+
+    #check:checked ~ nav{
+        height: 25vh;
     }
 
     /* Navigation------------------------------------------------- */
