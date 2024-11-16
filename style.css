@@ -67,6 +67,7 @@ li{
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    border: solid red;
 }
 
 #main .main-intro{
