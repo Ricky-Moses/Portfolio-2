@@ -19,10 +19,6 @@ li{
     list-style-type: none;
 }
 
-/* body{
-    height: 1000vh;
-} */
-
 /* Navigation Bar================================================ */
 
 #check, label{
@@ -66,7 +62,7 @@ li{
 #main{
     /* border: solid red; */
     height: 91.2vh;
-    background: url(image/canada.jpg)  no-repeat center;
+    background: url(image/canada.jpg)  no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -209,9 +205,24 @@ li{
 
 
 @media (max-width:450px){
+
+    /* Navigation------------------------------------------------- */
+
+    #navigation .header{
+        padding: 4vw;
+    }
+
+    /* Navigation------------------------------------------------- */
+
     /* Main------------------------------------------------------- */
+
+    #main{
+        height: 50vh;
+
+    }
     #main .main-intro{
         width: 60%;
+        top: 60%;
     }
 
     #main .main-intro h2{
