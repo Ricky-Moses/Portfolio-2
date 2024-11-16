@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    --color: #fff;
+    --btn-color: #2f80ff;
+    --btn-border: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* body{
+    height: 1000vh;
+} */
+
+/* Navigation Bar================================================ */
+
+#check, label{
+    display: none;
+}
+
+#navigation{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#navigation .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 6vw;
+    background: rgb(33, 37, 41);
+    position: relative;
+}
+
+.header .logo{
+    font-size: 1.3em;
+    color: var(--color);
+}
+
+.header nav ul{
+    display: flex;
+    gap: 30px;
+}
+
+.header ul a{
+    color: var(--color);
+}
+
+/* Navigation Bar================================================ */
+
+
+/* Main========================================================== */
+
+#main{
+    /* border: solid red; */
+    height: 91.2vh;
+    background: url(image/canada.jpg)  no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#main .main-intro{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -70%);
+    line-height: 400%;
+    width: 60%;
+}
+
+.main-intro h2{
+    font-size: 2em;
+    color: var(--color);
+}
+
+.main-intro h1{
+    font-size: 3em;
+    color: var(--color);
+}
+
+.main-intro .btn-1{
+    padding: .8vw 1.2vw;
+    border-radius: var(--btn-border);
+    border: none;
+    outline: none;
+    background: #2f80ff;
+    color: var(--color);
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.main-intro .btn-1:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+/* Main========================================================== */
+
+
+
+
+
+
+
+
+
+
+/* Media Query==================================================== */
+
+@media (max-width:1400px){
+    /* Navigation------------------------------------------------- */
+    #navigation .header{
+        padding: 1vw 2vw;
+    }
+    /* Navigation------------------------------------------------- */
+
+    /* Main------------------------------------------------------- */
+
+    #main{
+        height: 60vh;
+    }
+
+    #main .main-intro{
+        width: 100%;
+    }
+    #main .main-intro .btn-1 {
+        padding: 1.2vw 1.5vw;
+    }
+
+    /* Main------------------------------------------------------- */
+
+
+}
+
+
+@media (max-width:992px){
+    /* Navigation------------------------------------------------- */
+    .header nav{
+        background: rgb(33, 37, 41);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        padding: .1vw 2vw;
+        overflow: hidden;
+    }
+
+    .header ul{
+        flex-direction: column;
+    }
+
+    .header label{
+        display: block;
+        font-size: 1.4em;
+        color: var(--color);
+    }
+
+    #check:checked ~ nav{
+        height: 20vh;
+    }
+    /* Navigation------------------------------------------------- */
+
+    /* Main------------------------------------------------------- */
+
+    #main{
+        height: 60vh;
+    }
+
+    #main .main-intro {
+        width: 100%;
+    }
+
+    #main .main-intro .btn-1 {
+        padding: 2vw;
+    }
+
+    /* Main------------------------------------------------------- */
+}
+
+
+@media (max-width:768px){
+    /* Main------------------------------------------------------- */
+
+    #main .main-intro {
+        width: 100%;
+    }
+
+    #main .main-intro .btn-1 {
+        padding: 2vw;
+    }
+
+    /* Main------------------------------------------------------- */
+}
+
+
+@media (max-width:450px){
+    /* Main------------------------------------------------------- */
+    #main .main-intro{
+        width: 60%;
+    }
+
+    #main .main-intro h2{
+        font-size: 1.8em;
+    }
+
+    #main .main-intro .btn-1 {
+        padding: 2vw;
+    }
+    /* Main------------------------------------------------------- */
+}
+
+@media (max-width:394px){
+    /* Main------------------------------------------------------- */
+
+    #main .main-intro {
+        width: 70%;
+    }
+
+    /* Main------------------------------------------------------- */
+
+}
